@@ -1,0 +1,45 @@
+{
+    "jobName": "CreateByteArray_256",
+    "jobId": "e4c81d20-7677-4cb2-b13f-33370b98ba2f",
+    "jobQueue": "arn:aws:batch:us-east-1:XXXXXXXXXXX:job-queue/sb-thes-vqcmain",
+    "status": "SUCCEEDED",
+    "attempts": [{
+        "container": {
+            "containerInstanceArn": "arn:aws:ecs:us-east-1:XXXXXXXXXXX:container-instance/19ffbfdc-febf-4081-b08a-5d54e45bdef0",
+            "taskArn": "arn:aws:ecs:us-east-1:XXXXXXXXXXX:task/80a5ce3d-8a87-4473-b366-1a5ecc6be8c8",
+            "exitCode": 0,
+            "logStreamName": "SampleProblem3JobDefinitionName/default/80a5ce3d-8a87-4473-b366-1a5ecc6be8c8",
+            "networkInterfaces": []
+        },
+        "startedAt": 1582237533093,
+        "stoppedAt": 1582237533592,
+        "statusReason": "Essential container in task exited"
+    }],
+    "statusReason": "Essential container in task exited",
+    "createdAt": 1582237066787,
+    "startedAt": 1582237533093,
+    "stoppedAt": 1582237533592,
+    "dependsOn": [],
+    "jobDefinition": "arn:aws:batch:us-east-1:XXXXXXXXXXX:job-definition/SampleProblem3JobDefinitionName:1",
+    "parameters": {},
+    "container": {
+        "image": "python:3.6",
+        "vcpus": 1,
+        "memory": 512,
+        "command": [
+            "python",
+            "-c",
+            "x = bytearray(25600000); print(\"Done\")"
+        ],
+        "volumes": [],
+        "environment": [],
+        "mountPoints": [],
+        "ulimits": [],
+        "exitCode": 0,
+        "containerInstanceArn": "arn:aws:ecs:us-east-1:XXXXXXXXXXX:container-instance/19ffbfdc-febf-4081-b08a-5d54e45bdef0",
+        "taskArn": "arn:aws:ecs:us-east-1:XXXXXXXXXXX:task/80a5ce3d-8a87-4473-b366-1a5ecc6be8c8",
+        "logStreamName": "SampleProblem3JobDefinitionName/default/80a5ce3d-8a87-4473-b366-1a5ecc6be8c8",
+        "networkInterfaces": [],
+        "resourceRequirements": []
+    }
+}

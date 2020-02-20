@@ -1,0 +1,47 @@
+{
+    "jobName": "CreateByteArray_10240",
+    "jobId": "f6580b83-15ba-44b1-ab85-268b6f9b0619",
+    "jobQueue": "arn:aws:batch:us-east-1:XXXXXXXXXXX:job-queue/sb-thes-vqcmain",
+    "status": "FAILED",
+    "attempts": [{
+        "container": {
+            "containerInstanceArn": "arn:aws:ecs:us-east-1:XXXXXXXXXXX:container-instance/afdfaea6-cad7-4f7c-b113-722d5551cace",
+            "taskArn": "arn:aws:ecs:us-east-1:XXXXXXXXXXX:task/030b6ddd-823f-4393-8322-31fb7299d9a4",
+            "exitCode": 137,
+            "reason": "OutOfMemoryError: Container killed due to memory usage",
+            "logStreamName": "SampleProblem3JobDefinitionName/default/030b6ddd-823f-4393-8322-31fb7299d9a4",
+            "networkInterfaces": []
+        },
+        "startedAt": 1582238766976,
+        "stoppedAt": 1582238767720,
+        "statusReason": "Essential container in task exited"
+    }],
+    "statusReason": "Essential container in task exited",
+    "createdAt": 1582238086539,
+    "startedAt": 1582238766976,
+    "stoppedAt": 1582238767720,
+    "dependsOn": [],
+    "jobDefinition": "arn:aws:batch:us-east-1:XXXXXXXXXXX:job-definition/SampleProblem3JobDefinitionName:1",
+    "parameters": {},
+    "container": {
+        "image": "python:3.6",
+        "vcpus": 1,
+        "memory": 512,
+        "command": [
+            "python",
+            "-c",
+            "x = bytearray(1024000000); print(\"Done\")"
+        ],
+        "volumes": [],
+        "environment": [],
+        "mountPoints": [],
+        "ulimits": [],
+        "exitCode": 137,
+        "reason": "OutOfMemoryError: Container killed due to memory usage",
+        "containerInstanceArn": "arn:aws:ecs:us-east-1:XXXXXXXXXXX:container-instance/afdfaea6-cad7-4f7c-b113-722d5551cace",
+        "taskArn": "arn:aws:ecs:us-east-1:XXXXXXXXXXX:task/030b6ddd-823f-4393-8322-31fb7299d9a4",
+        "logStreamName": "SampleProblem3JobDefinitionName/default/030b6ddd-823f-4393-8322-31fb7299d9a4",
+        "networkInterfaces": [],
+        "resourceRequirements": []
+    }
+}
