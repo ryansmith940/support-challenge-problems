@@ -1,0 +1,18 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "Create the Job Definition",
+    "Resources": {
+        "JobDefinition": {
+            "Type": "AWS::Batch::JobDefinition",
+            "Properties": {
+                "JobDefinitionName": "SampleProblem3JobDefinitionName",
+                "ContainerProperties": {
+                    "Image": "python:3.6",
+                    "Memory": 512,
+                    "Vcpus": 1
+                },
+                "Type": "container"
+            }
+        }
+    }
+}

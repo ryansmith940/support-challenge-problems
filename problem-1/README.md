@@ -20,4 +20,4 @@ AttributeError: 'NoneType' object has no attribute 'capitalize'
 1) What is the program doing?
 1) Why is it not working?
 1) What is a possible solution?
-1) Are there any other solutions?
+1) Are there any other posible solutions?
