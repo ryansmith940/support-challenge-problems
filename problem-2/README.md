@@ -1,6 +1,6 @@
 # Problem 2
 
-The given application log shows log events from an application that started having issues around <> on <>.
+The given application log shows log events from an application that started having issues a few days ago.
 
 ## Questions
 

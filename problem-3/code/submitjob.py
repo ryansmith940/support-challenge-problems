@@ -3,8 +3,8 @@
 import boto3
 
 def main():
-    #submit_job(256)
-    #submit_job(512)
+    submit_job(256)
+    submit_job(512)
     submit_job(10240)
 
 def submit_job(array_size_MB):
